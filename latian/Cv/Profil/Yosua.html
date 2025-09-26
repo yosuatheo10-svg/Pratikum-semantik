@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile - Yosua Theo Fraktus Michael Jagga Wali</title>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <style>
+        /* Styles khusus untuk halaman profile */
+        .profile-page {
+            min-height: 100vh;
+            background: #f6f8fa;
+        }
+        
+        .profile-header {
+            background-color: #1e4beb;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        
+        .back-button:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .profile-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 40px;
+        }
+        
+        .profile-main {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1e4beb;
+        }
+        
+        .profile-info {
+            flex: 1;
+        }
+        
+        .profile-info h1 {
+            margin: 0 0 10px 0;
+            color: #222;
+            font-size: 2.2rem;
+        }
+        
+        .profile-info .title {
+            color: #1e4beb;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        .profile-details {
+            margin-top: 30px;
+        }
+        
+        .detail-section {
+            margin-bottom: 25px;
+        }
+        
+        .detail-section h3 {
+            color: #1e4beb;
+            border-bottom: 2px solid #e1e4e8;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .detail-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .detail-section li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .detail-section li:last-child {
+            border-bottom: none;
+        }
+        
+        .navigation-links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e1e4e8;
+        }
+        
+        .nav-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin: 0 10px;
+            background: #1e4beb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .nav-button:hover {
+            background: #0d3cc8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(30, 75, 235, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .profile-main {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .profile-avatar {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .profile-container {
+                margin: 20px;
+                padding: 20px;
+            }
+            
+            .back-button {
+                left: 10px;
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="profile-page">
+    <header class="profile-header">
+        <button class="back-button" onclick="goBack()">×</button>
+        <h1>Detail Profile Mahasiswa</h1>
+    </header>
+    
+    <div class="profile-container">
+        <div class="profile-main">
+            <img src="../photo/Yosua.jpg" alt="Yosua Theo Fraktus Michael Jagga Wali" class="profile-avatar">
+            <div class="profile-info">
+                <h1>Yosua Theo Fraktus Michael Jagga Wali</h1>
+                <div class="title">Mahasiswa - 42430006</div>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> Yosua Theo Fraktus Michael Jagga Wali</p>
+                    <p><strong>Universitas:</strong> Universitas Pendidikan Nasional Denpasar</p>
+                    <p><strong>Program Studi:</strong> Pemrograman Web</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-details">
+            <div class="detail-section">
+                <h3>Tentang Saya</h3>
+                <p>Seorang mahasiswa yang antusias dalam mempelajari pengembangan web dan teknologi terkini. Memiliki ketertarikan dalam membuat aplikasi web yang responsive dan user-friendly.</p>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Pendidikan</h3>
+                <ul>
+                    <li><strong>Universitas Pendidikan Nasional Denpasar</strong> - Teknik Informatika (2024 - Sekarang)</li>
+                </ul>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Minat Penelitian</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Mobile Application Development</li>
+                    <li>User Interface/User Experience Design</li>
+                    <li>Cloud Computing</li>
+                </ul>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Publikasi Terpilih</h3>
+                <ul>
+                    <li>Yosua Theo, "Web Development for Beginners", Journal of Web Studies, 2023</li>
+                    <li>Yosua Theo, "Responsive Design Principles", International Conference on Web Technologies, 2024</li>
+                </ul>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React.js, Node.js</li>
+                    <li>UI/UX Design</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navigation-links">
+            <a href="../index.html" class="nav-button">🏠 Kembali ke Beranda</a>
+            <a href="mahasiswa2.html" class="nav-button">👉 Lihat Profil Lain</a>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            // Cek jika pengguna datang dari halaman dalam situs yang sama
+            if (document.referrer.includes(window.location.hostname)) {
+                window.history.back();
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+        
+        // Navigasi dengan tombol Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                goBack();
+            }
+        });
+        
+        // Optimasi loading gambar
+        window.addEventListener('load', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>
