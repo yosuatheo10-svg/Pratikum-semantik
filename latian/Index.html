@@ -1,22 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Design</title>
-    <link rel="Stylesheet" type="text/css" href="Assets/style.css">
+    <title>Profil Mahasiswa - Universitas Pendidikan Nasional Denpasar</title>
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Profil CV Mahasiswa</h1>
+        <h1>Profil Mahasiswa</h1>
+        <p>Universitas Pendidikan Nasional Denpasar - Program Studi Pemrograman Web</p>
     </header>
-    <div class="container">
-        <div>
-            <a href="Profile/Yosua.html">
-                <img src="Photo/Yosua.jpg">
-                <span class="caption">Yosua Theo Fraktus Michael Jagga Wali </span>
-            </a>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#profiles">Profil Mahasiswa</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+    
+    <main class="container">
+        <section id="about">
+            <h2 class="page-title">Selamat Datang</h2>
+            <p class="text-center">Website ini menampilkan profil mahasiswa Program Studi Pemrograman Web di Universitas Pendidikan Nasional Denpasar. Setiap mahasiswa memiliki keahlian dan minat penelitian yang unik dalam bidang pengembangan web dan teknologi terkini.</p>
+        </section>
+        
+        <section id="profiles" class="mt-2">
+            <h2 class="page-title">Profil Mahasiswa</h2>
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <img src="Photo/Yosua.jpg" alt="Yosua Theo Fraktus Michael Jagga Wali">
+                    <div class="profile-info">
+                        <h3>Yosua Theo Fraktus Michael Jagga Wali</h3>
+                        <p>NIM: 42430006</p>
+                        <p>Mahasiswa dengan minat dalam Web Development, Mobile Application, dan UI/UX Design.</p>
+                        <a href="Profile/Yosua.html" class="view-profile">Lihat Profil Lengkap</a>
+                    </div>
+                </div>
+                
+                <!-- Template untuk mahasiswa lain (dapat ditambahkan kemudian) -->
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/300x250/4361ee/ffffff?text=Mahasiswa+2" alt="Mahasiswa 2">
+                    <div class="profile-info">
+                        <h3>Nama Mahasiswa 2</h3>
+                        <p>NIM: 42430007</p>
+                        <p>Deskripsi singkat tentang mahasiswa ini dan minat penelitiannya.</p>
+                        <a href="Profile/mahasiswa2.html" class="view-profile">Lihat Profil Lengkap</a>
+                    </div>
+                </div>
+                
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/300x250/3a0ca3/ffffff?text=Mahasiswa+3" alt="Mahasiswa 3">
+                    <div class="profile-info">
+                        <h3>Nama Mahasiswa 3</h3>
+                        <p>NIM: 42430008</p>
+                        <p>Deskripsi singkat tentang mahasiswa ini dan minat penelitiannya.</p>
+                        <a href="Profile/mahasiswa3.html" class="view-profile">Lihat Profil Lengkap</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="mt-2 mb-2">
+            <h2 class="page-title">Kontak</h2>
+            <div class="text-center">
+                <p>Untuk informasi lebih lanjut, silakan hubungi:</p>
+                <p><strong>Universitas Pendidikan Nasional Denpasar</strong></p>
+                <p>Program Studi Pemrograman Web</p>
+                <p>Email: info@undiknas.ac.id</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Universitas Pendidikan Nasional Denpasar. Semua Hak Dilindungi.</p>
+            <p>Dibuat dengan ❤️ oleh Mahasiswa Program Studi Pemrograman Web</p>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
